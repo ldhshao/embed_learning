@@ -7,4 +7,5 @@
 #define LED_PORT_RCC RCC_APB2Periph_GPIOC
 
 void test_led1(void);
+void test_led2(void);
 #endif

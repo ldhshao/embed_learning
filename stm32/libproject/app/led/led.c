@@ -1,4 +1,5 @@
 #include "led.h"
+#include "../rcc/rcc.h"
 
 void init_led()
 {
@@ -27,5 +28,17 @@ void test_led1()
 		delay(1000);
 		GPIO_SetBits(LED_PORT,GPIO_Pin_1);
 		delay(1000);
+	}
+}
+
+void test_led2()
+{
+	init_systick();
+	init_led();
+	while(1){
+		GPIO_ResetBits(LED_PORT,GPIO_Pin_1);
+		delay_ms(1000);
+		GPIO_SetBits(LED_PORT,GPIO_Pin_1);
+		delay_ms(1000);
 	}
 }
