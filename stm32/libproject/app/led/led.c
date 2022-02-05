@@ -42,3 +42,13 @@ void test_led2()
 		delay_ms(1000);
 	}
 }
+
+void set_led(uint16_t pin, uint32_t val)
+{
+	if (IS_GET_GPIO_PIN(pin)){
+		if (0 == val)
+			GPIO_ResetBits(LED_PORT, pin);
+		else
+			GPIO_SetBits(LED_PORT, pin);
+	}
+}

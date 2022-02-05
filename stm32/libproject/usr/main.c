@@ -1,6 +1,7 @@
 #include "../app/led/led.h"
 #include "../app/rcc/rcc.h"
 #include "../app/beep/beep.h"
+#include "../app/key/key.h"
 
 int main()
 {
@@ -12,8 +13,11 @@ int main()
 #if 0
 	test_led2();
 #endif
-#if 1
+#if 0
 	test_beep();
+#endif
+#if 1
+	test_key();
 #endif
 	
 	return 0;

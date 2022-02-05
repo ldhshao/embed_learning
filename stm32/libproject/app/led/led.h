@@ -6,6 +6,8 @@
 #define LED_PIN  (GPIO_Pin_0|GPIO_Pin_1|GPIO_Pin_2|GPIO_Pin_3|GPIO_Pin_4|GPIO_Pin_5|GPIO_Pin_6|GPIO_Pin_7)
 #define LED_PORT_RCC RCC_APB2Periph_GPIOC
 
+void init_led(void);
 void test_led1(void);
 void test_led2(void);
+void set_led(uint16_t pin, uint32_t val);
 #endif
