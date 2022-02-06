@@ -473,6 +473,11 @@
               <FileType>1</FileType>
               <FilePath>.\lib\periphdriver\misc.c</FilePath>
             </File>
+            <File>
+              <FileName>stm32f10x_exti.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\lib\periphdriver\stm32f10x_exti.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -552,6 +557,11 @@
               <FileName>key.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\app\key\key.h</FilePath>
+            </File>
+            <File>
+              <FileName>exti.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\app\exti\exti.c</FilePath>
             </File>
           </Files>
         </Group>

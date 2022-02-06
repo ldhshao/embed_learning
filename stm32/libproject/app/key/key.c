@@ -17,7 +17,6 @@ void init_key()
 	GPIO_InitStructure.GPIO_Mode=GPIO_Mode_IPU;
 	GPIO_InitStructure.GPIO_Speed=GPIO_Speed_50MHz;
 	GPIO_Init(KEY_UP_Port,&GPIO_InitStructure);
-
 }
 
 uint16_t read_key_val(GPIO_TypeDef* GPIOx, uint16_t pin)

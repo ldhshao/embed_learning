@@ -2,6 +2,7 @@
 #include "../app/rcc/rcc.h"
 #include "../app/beep/beep.h"
 #include "../app/key/key.h"
+#include "../app/exti/exti.h"
 
 int main()
 {
@@ -16,8 +17,11 @@ int main()
 #if 0
 	test_beep();
 #endif
-#if 1
+#if 0
 	test_key();
+#endif
+#if 1
+	init_exti0();
 #endif
 	
 	return 0;
